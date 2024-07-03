@@ -1,10 +1,10 @@
 import axios from "axios";
-// import { BASE_URL } from "./constants";
+import { BASE_URL, PROD_URL } from "./constants";
 
 // create an axios instance
 const axiosInstance = axios.create({
   // set base url, timeout of 10s, header type
-  baseURL: process.env.BASE_URL,
+  baseURL: BASE_URL || PROD_URL,
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
