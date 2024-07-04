@@ -2,7 +2,7 @@ import axios from "axios";
 // import { BASE_URL, PROD_URL } from "./constants";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
-const PROD_URL = import.meta.env.VITE_BASE_URL;
+const PROD_URL = import.meta.env.VITE_PROD_URL;
 
 // create an axios instance
 const axiosInstance = axios.create({
